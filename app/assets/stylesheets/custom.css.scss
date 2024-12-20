@@ -1,1 +1,13 @@
 @import 'semantic-ui';
+
+.chatbox{
+    height: 450px;
+}
+.field{
+    display: flex;
+    justify-content: end;
+}
+.ui.form .field label {
+    display: block !important; /* Asegura que las etiquetas estén sobre los inputs */
+    margin-bottom: 5px; /* Agrega espacio entre la etiqueta y el campo */
+  }
