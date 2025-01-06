@@ -20,14 +20,16 @@
         </div>
       </div>
       <div class="extra content">
-        <form class="ui reply form">
+        <%= form_for(@message, html: {class: "ui reply form", role: "form"}, url: message_path) do |f| %>
           <div class="field">
             <div class="ui fluid icon input">
-            <input type="text" placeholder="Send a message">
-              <i class="paper plane icon"></i> 
+              <%= f.text_field :message, placeholder: "Send a message...", required: true %>
+              <button type="submit" class="ui button">
+                <i class=" blue paper plane icon"></i>
+              </button>
             </div>
           </div>
-        </form>
+        <% end %>
       </div>
     </div>
   </div>
