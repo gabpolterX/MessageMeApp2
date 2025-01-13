@@ -4,6 +4,7 @@ import "controllers"
 import "@hotwired/turbo-rails"
 import * as jquery from "jquery"
 import "semantic-ui"
+import "channels"
 
 
 $(document).on('turbo:load', function() {
